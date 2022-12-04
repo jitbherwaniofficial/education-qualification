@@ -1,0 +1,39 @@
+{
+  "qualifications": [
+    {
+      "id": 1,
+      "degree": "Complete NodeJs Course",
+      "college": "Udemy",
+      "year": "2022 (February to March)",
+      "image": "/assets/Group1.svg"
+    },
+    {
+      "id": 2,
+      "degree": "Complete Angular 9 Course",
+      "college": "Udemy",
+      "year": "2021 (October to December)",
+      "image": "/assets/Group1.svg"
+    },
+    {
+      "id": 3,
+      "degree": "Web Development Bootcamp",
+      "college": "Udemy",
+      "year": "2021 (April to june)",
+      "image": "/assets/Group1.svg"
+    },
+    {
+      "id": 4,
+      "degree": "Diploma in Automobile Engineering",
+      "college": "Arun Muchchala Polytechnic",
+      "year": "2014 - 2016",
+      "image": "/assets/Group3.svg"
+    },
+    {
+      "id": 5,
+      "degree": "H.S.C",
+      "college": "R.D National College",
+      "year": "2008 - 2010",
+      "image": "/assets/Group1.svg"
+    }
+  ]
+}

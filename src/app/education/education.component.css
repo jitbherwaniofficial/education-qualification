@@ -1,0 +1,98 @@
+.container{
+    width: 80vw;
+    margin: 0 auto;
+    background-color: rgb(250, 250, 250);
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 30px ;
+}
+
+.header-icon{
+    padding-right: 50px;
+    cursor: pointer;
+}
+
+.edu {
+    display: flex;
+    gap: 20px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.icon-box{
+    width:120px;
+    height:100px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    margin-left: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(236, 236, 236);
+}
+
+.degree{
+    font-weight: 500;
+}
+.college{
+    font-weight: 500;
+    color: #757575;
+}
+
+.year{
+    font-weight: 400;
+    color: #757575;
+}
+
+input{
+    border: none;
+    outline: none;
+    font-size: 17px;
+    color: #757575;
+    border-radius: 8px;
+    box-shadow: 0px 3px 5px 3px rgba(0, 0, 0, 0.05);
+    padding: 0 15px;
+}
+
+.form-group{
+    padding: 0 30px;
+    display: flex;
+    gap: 27px;
+}
+
+.deg {
+    width: 20vw;
+    height: 40px;
+}
+.col {
+    width: 20vw;
+    height: 40px;
+}
+.yrs{
+    width: 13vw;
+    height: 40px;
+}
+
+.btn{
+    width: 5vw;
+    border: none;
+    outline: none;
+    height: 40px;
+    cursor: pointer;
+    border-radius: 8px;
+    background-color: gray;
+    color: white;
+    font-size: 17px;
+}
+
+label{
+    font-size: 20px;
+}
+
+span{
+    color: red;
+}

@@ -1,0 +1,39 @@
+<div class="container">
+    <div class="header">
+        <h1>Add Education Qualification</h1>
+    </div>
+    <form [formGroup]="qualificationForm" (ngSubmit)="onSubmit()" class="form-group">
+        <div class="pad-top">
+          <label>Education Type</label><span> *</span><br>
+          <input class="col" type="text" formControlName="degree">
+        </div>
+        <div class="pad-top">
+          <label>Name of the Institution</label><span> *</span><br>
+          <input class="col" type="text" formControlName="college">
+        </div>
+        <div class="pad-top">
+          <label>Major</label><span> *</span><br>
+          <input class="col" type="text" formControlName="major">
+        </div>
+        <div class="disFlex">
+            <div >
+              <label>Start Date</label><span> *</span><br>
+              <input class="yrs" type="date" formControlName="year">
+            </div>
+            <div>
+              <label>End Date</label><span> *</span><br>
+              <input class="yrs" type="date" formControlName="year">
+            </div>
+        </div>
+        <div class="btns">
+            <div>
+              <br><button type="submit" class="btn success">Add</button>
+            </div>
+            <div>
+              <br><button type="reset" class="btn danger" routerLink="/">Cancel</button>
+            </div>
+        </div>
+    </form>
+</div>
+
+

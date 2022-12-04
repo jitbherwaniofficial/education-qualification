@@ -1,0 +1,43 @@
+<div class="container">
+    <div class="header">
+      <h1>Education Qualification</h1>
+      <div class="icons">
+        <img class="header-icon" src="assets/Vector.svg" alt="" routerLink="add-education"> <!--c-->
+        <img class="header-icon" src="assets/Vector-1.svg" alt="" (click)="panelExpanded = !panelExpanded">
+      </div>
+    </div>
+    <form [formGroup]="qualificationForm" (ngSubmit)="onSubmit()" class="form-group" *ngIf="panelExpanded" >
+      <div>
+        <label>Degree</label><span>*</span><br>
+        <input class="deg" type="text" formControlName="degree">
+      </div>
+      <div>
+        <label>College</label><span>*</span><br>
+        <input class="col" type="text" formControlName="college">
+      </div>
+      <div>
+        <label>Start Date</label><span>*</span><br>
+        <input class="yrs" type="date" formControlName="year">
+      </div>
+      <div>
+        <label>End Date</label><span>*</span><br>
+        <input class="yrs" type="date" formControlName="year">
+      </div>
+      <div>
+        <br><button type="submit" class="btn">Submit</button>
+      </div>
+    </form>
+    <!-- <div>Degree :  {{qualificationForm.controls.degree.value}}</div> -->
+    <section class="">
+      <div class="edu" *ngFor="let edu of qualifications">
+        <div class="icon-box">
+          <img src={{edu.image}} alt="">
+        </div>
+        <div class="text">
+          <h2 class="degree">{{edu.degree}}</h2>
+          <h3 class="college">{{edu.college}}</h3>
+          <h4 class="year">{{edu.year}}</h4>
+        </div>
+      </div>
+    </section>
+  </div>
