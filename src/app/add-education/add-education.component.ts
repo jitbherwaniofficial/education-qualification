@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup } from '@angular/forms';
+import { Router } from '@angular/router';
 import { RestapiService } from '../service/restapi.service';
 
 @Component({
@@ -8,8 +9,8 @@ import { RestapiService } from '../service/restapi.service';
   styleUrls: ['./add-education.component.css']
 })
 export class AddEducationComponent implements OnInit {
-
-  constructor(private service : RestapiService) { }
+  qualifications:any=[]
+  constructor(private service : RestapiService, private router : Router) { }
 
   ngOnInit(): void {
   }
@@ -22,13 +23,11 @@ export class AddEducationComponent implements OnInit {
     image:new FormControl('assets/Group3.svg')
   })
 
-  getPostData(){
-    
-  }
-
   onSubmit(){
     this.service.postQualification(this.qualificationForm.value).subscribe(response => {
-      alert("Your Qualification Saved")
+      alert("Your Qualification Saved");
+      console.log(response);
+      this.router.navigate(['/']);
     })
   }
 

@@ -11,7 +11,7 @@ import { RestapiService } from '../service/restapi.service';
 export class EducationComponent implements OnInit {
 
   panelExpanded = false;
-  // qualifications:any;
+  qualifications:any;
 
   constructor(private router: Router, private service : RestapiService){}
 
@@ -26,50 +26,50 @@ export class EducationComponent implements OnInit {
 
   }
 
-  // qualificationData(){
-  //   this.service.getAllQualifications().subscribe(response => {
-  //     this.qualifications = response;
-  //     console.log(this.qualifications);
+  qualificationData(){
+    this.service.getAllQualifications().subscribe(response => {
+      this.qualifications = response;
+      // console.log(this.qualifications);
       
-  //   })
-  // }
+    })
+  }
 
 
-  qualifications = [
-    {
-      degree: "Complete NodeJs Course",
-      college: "Udemy",
-      year: "2022 (February to March)",
-      image:"assets/Group1.svg"
-    },
-    {
-      degree: "Complete Angular 9 Course",
-      college: "Udemy",
-      year: "2021 (October to December)",
-      image:"assets/Group1.svg"
-    },
-    {
-      degree: "Web Development Bootcamp",
-      college: "Udemy",
-      year: "2021 (April to june)",
-      image:"assets/Group1.svg",
-    },
-    {
-      degree: "Diploma in Automobile Engineering",
-      college: "Arun Muchchala Polytechnic",
-      year: "2014 - 2016",
-      image:"assets/Group3.svg"
-    },
-    {
-      degree: "H.S.C",
-      college: "R.D National College",
-      year: "2008 - 2010",
-      image:"assets/Group1.svg"
-    },
-  ]
+  // qualifications = [
+  //   {
+  //     degree: "Complete NodeJs Course",
+  //     college: "Udemy",
+  //     year: "2022 (February to March)",
+  //     image:"assets/Group1.svg"
+  //   },
+  //   {
+  //     degree: "Complete Angular 9 Course",
+  //     college: "Udemy",
+  //     year: "2021 (October to December)",
+  //     image:"assets/Group1.svg"
+  //   },
+  //   {
+  //     degree: "Web Development Bootcamp",
+  //     college: "Udemy",
+  //     year: "2021 (April to june)",
+  //     image:"assets/Group1.svg",
+  //   },
+  //   {
+  //     degree: "Diploma in Automobile Engineering",
+  //     college: "Arun Muchchala Polytechnic",
+  //     year: "2014 - 2016",
+  //     image:"assets/Group3.svg"
+  //   },
+  //   {
+  //     degree: "H.S.C",
+  //     college: "R.D National College",
+  //     year: "2008 - 2010",
+  //     image:"assets/Group1.svg"
+  //   },
+  // ]
 
   ngOnInit(): void {
-    // this.qualificationData();
+    this.qualificationData();
   }
 
 }

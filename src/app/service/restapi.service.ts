@@ -6,7 +6,8 @@ import { Injectable } from '@angular/core';
 })
 export class RestapiService {
 
-  url = "http://jsonplaceholder.typicode.com/qualifications";
+  url = "https://my-json-server.typicode.com/jitbherwaniofficial/education-qualification/qualifications";
+  // url = "http://localhost:3000/qualifications"
 
   constructor(private http : HttpClient) { }
 
